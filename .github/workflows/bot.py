@@ -14,12 +14,10 @@ FEEDS = [
   "https://research.binance.com/feed",
   "https://finance.yahoo.com/news/rssindex",   # あとで自動で絞り込み
   # --- 不動産投資 ---------------------
-  "https://rss.app/feeds/xxxxxxxx.json",       # 楽待 (RSS.appで作成したURLを貼る)
   "https://pushum13.rssing.com/chan-7891744/latest.php", # 健美家
   "https://suumo.jp/journal/feed/",
   "https://www.homes.co.jp/cont/press/feed/",
   "https://jp.savills.co.jp/rss-feeds/news.rss",
-  "https://rss.app/feeds/yyyyyyyy.json",       # 日経REマーケット (RSS.app)
   "https://www.worldpropertyjournal.com/japan/feed",
   "https://resources.realestate.co.jp/feed/",
   "https://www.realestate-tokyo.com/news/feed/",
