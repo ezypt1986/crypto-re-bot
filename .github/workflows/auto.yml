@@ -1,0 +1,22 @@
+name: rss2x
+on:
+  schedule:
+    - cron: '5 * * * *'   # 
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install feedparser tweepy
+      - run: python bot.py
+        env:
+          X_BEARER:        ${{ secrets.X_BEARER }}
+          X_CONSUMER:      ${{ secrets.X_CONSUMER }}
+          X_SECRET:        ${{ secrets.X_SECRET }}
+          X_ACCESS:        ${{ secrets.X_ACCESS }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
